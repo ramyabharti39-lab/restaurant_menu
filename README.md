@@ -28,9 +28,9 @@ restaurant-menu/
 - Responsive design
 - Card layout for food items
 
-
 ## Live Project Link
-(Not deployed / Add GitHub or Netlify link)
+https://ramyabharti39-lab.github.io/restaurant_menu/
+
 
 ## Challenges Faced
 it was somewhat challenging to select color of website to look more appealing and appetizing.
