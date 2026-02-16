@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FLAVOUR__HUNTERS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- Header -->
+<header>
+  <h1 class="logo">FLAVOUR__HUNTERS</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Menu</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<!-- Filter Buttons -->
+<section class="filter-bar">
+  <button onclick="filterMenu('all')" class="active">All</button>
+  <button onclick="filterMenu('starters')">Starters</button>
+  <button onclick="filterMenu('main')">Main Course</button>
+  <button onclick="filterMenu('desserts')">Desserts</button>
+  <button onclick="filterMenu('beverages')">Beverages</button>
+</section>
+
+<!-- Menu Section -->
+<section class="menu">
+
+  <!-- Starters -->
+  <div class="menu-item starters">
+        <img src="https://th.bing.com/th/id/OIP.ad4BUY3Z2O0ix6Ka0CbhvAHaLG?w=186&h=279&c=7&r=0&o=7&cb=defcachec2&dpr=1.3&pid=1.7&rm=3" height="200" alt="Garlic Bread">
+    <h3>Garlic Bread</h3>
+    <p>Crispy bread with garlic butter.</p>
+    <span>Rs.49</span>
+    <button onclick="addToCart('Garlic Bread', 49)">Add</button>
+  </div>
+
+  <div class="menu-item starters">
+        <img src="https://th.bing.com/th/id/OIP.4rRckKfQOyudqaR_NEcNFgHaEJ?w=332&h=187&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" height="200" alt="Chicken Wings">
+    <h3>Chicken Wings</h3>
+    <p>Spicy grilled wings.</p>
+    <span>Rs.249</span>
+    <button onclick="addToCart('Chicken Wings', 249)">Add</button>
+  </div> 
+  
+   <div class="menu-item starters">
+        <img src="https://th.bing.com/th/id/OIP.rmfdec0BPpCFEx2zxrK2hAHaGM?w=226&h=189&c=7&r=0&o=7&cb=defcachec2&dpr=1.3&pid=1.7&rm=3" height="200" alt="Paneer Tikka">
+    <h3>Paneer Tikka</h3>
+    <p>Spicy soft cubes of paneer, served with fresh mint chutney.</p>
+    <span>Rs.199</span>
+    <button onclick="addToCart('Paneer Tikka', 199)">Add</button>
+    </div>
+
+    <div class="menu-item starters">
+        <img src="https://th.bing.com/th/id/OIP._xnfLaeKEYS8cck4tNfHMgHaE8?w=241&h=181&c=7&r=0&o=7&cb=defcachec2&dpr=1.3&pid=1.7&rm=3" height="200" width="50"  alt="Stuffed Mushroom">
+    <h3>Stuffed Mushroom</h3>
+    <p>Juicy Mushroom Caps filled with mixture of cheese, herbs, and spices.</p>
+    <span>Rs.319</span>
+    <button onclick="addToCart('Stuffed Mushroom', 319)">Add</button>
+    </div>
+
+
+  <!-- Main Course -->
+  <div class="menu-item main">
+        <img src="https://th.bing.com/th/id/OIP.Dx818Lk3c3DEpidwxAe1YwHaFj?w=251&h=188&c=7&r=0&o=7&cb=defcachec2&dpr=1.3&pid=1.7&rm=3" height="250" width="80" alt=" Veg Biryani">
+    <h3>Veg Biryani</h3>
+    <p>Fragnant basmati rice with mixed vegetables,aromatic spices, and herbs.</p>
+    <span>Rs.249</span>
+    <button onclick="addToCart('Veg Biryani', 249)">Add</button>
+  </div>
+
+  <div class="menu-item main">
+        <img src="https://th.bing.com/th/id/OIP.GW24A01FzUyLruogqGgbHwHaLG?w=186&h=279&c=7&r=0&o=7&cb=defcachec2&dpr=1.3&pid=1.7&rm=3" height="250" alt="Butter Chicken">
+    <h3>Butter Chicken with Rice</h3>
+    <p>Creamy curry with rice.</p>
+    <span>Rs.299</span>
+    <button onclick="addToCart('Butter Chicken', 299)">Add</button>
+  </div>
+
+  <div class="menu-item main">
+        <img src="https://th.bing.com/th/id/OIP.FXqSV1UDRXud3U1fMBPmLAHaHa?w=169&h=180&c=7&r=0&o=7&cb=defcachec2&dpr=1.3&pid=1.7&rm=3" height="250" alt="Kadai Paneer">
+    <h3>Kadai Paneer</h3>
+    <p>Paneer tossed with bell pepper,onion,a thick masala gravy with spicy flavours.</p>
+    <span>Rs.299</span>
+    <button onclick="addToCart('Kadai Paneer', 299)">Add</button>
+  </div>
+
+  <div class="menu-item main">
+        <img src="https://th.bing.com/th/id/OIP.Y-OWIhDJk5FmLnbSPKpYqgHaE8?w=241&h=180&c=7&r=0&o=7&cb=defcachec2&dpr=1.3&pid=1.7&rm=3" height="250" alt="Fish Curry">
+    <h3>Fish Curry</h3>
+    <p>Fresh fish pieces cooked with spicy gravy infused with traditional coastal spices.</p>
+    <span>Rs.199</span>
+    <button onclick="addToCart('Fish Curry', 199)">Add</button>
+  </div>
+
+  <!-- Desserts -->
+  <div class="menu-item desserts">
+        <img src="https://th.bing.com/th/id/OIP.c0K_tyedfhScr9bAT5zo_gDMEy?w=204&h=306&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" height="250" width="175" alt="chocolate lava cake">
+    <h3>Chocolate Lava Cake</h3>
+    <p>Warm chocolate-filled cake.</p>
+    <span>Rs.149</span>
+    <button onclick="addToCart('Lava Cake', 149)">Add</button>
+  </div>
+
+  <div class="menu-item desserts">
+        <img src="https://th.bing.com/th/id/OIP.qZgN-Z8WGpyDUJGWs_4FfAHaLH?w=186&h=279&c=7&r=0&o=7&cb=defcachec2&dpr=1.3&pid=1.7&rm=3" height="250" alt="Ice Cream Sundae">
+    <h3>Ice Cream Sundae</h3>
+    <p>Vanilla ice cream with toppings.</p>
+    <span>Rs.99</span>
+    <button onclick="addToCart('Sundae', 99)">Add</button>
+  </div>
+ <div class="menu-item desserts">
+        <img src="https://th.bing.com/th/id/OIP.KeI2UV4X01HLASoBWij6lQHaK2?w=128&h=188&c=7&r=0&o=7&cb=defcachec2&dpr=1.3&pid=1.7&rm=3" height="250" alt="Gulaab Jamun">
+    <h3>Gulaab Jamun</h3>
+    <p>Soft milk-solid dumplings soaked in fragnant sugar syrup flavoured with cardamom.</p>
+    <span>Rs.20/per piece</span>
+    <button onclick="addToCart('Gulaab Jamun', 20)">Add</button>
+  </div>
+
+  <div class="menu-item desserts">
+       <img src="https://th.bing.com/th/id/OIP.W3b68CVjlvB4DWla-CoYkgHaHa?w=195&h=195&c=7&r=0&o=7&cb=defcachec2&dpr=1.3&pid=1.7&rm=3" height="250" alt="Cheesecake">
+    <h3>Cheesecake</h3>
+    <p>Smooth and creamy baked cheesecake with a butterly biscuit base.</p>
+    <span>Rs.209</span>
+    <button onclick="addToCart('Cheesecake', 209)">Add</button>
+  </div>
+
+  <!-- Beverages -->
+  <div class="menu-item beverages">
+       <img src="https://th.bing.com/th/id/OIP.iBbXy5uqyTlk5HTaK6e5iwHaD8?w=332&h=180&c=7&r=0&o=7&cb=defcachec2&dpr=1.3&pid=1.7&rm=3" height="250" alt="Lime Soda">
+    <h3>Fresh Lime Soda</h3>
+    <p>Refreshing summer drink made with fresh lime juice.</p>
+    <span>Rs.99</span>
+    <button onclick="addToCart('Lime Soda',99)">Add</button>
+  </div>
+
+  <div class="menu-item beverages">
+        <img src="https://th.bing.com/th/id/OIP.cEAyzL5nXvoyh9doJM3rLgHaLH?w=204&h=306&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" height="250" width="150" alt="Iced Coffee">
+    <h3>Iced Coffee</h3>
+    <p>Cold brewed coffee.</p>
+    <span>Rs.150</span>
+    <button onclick="addToCart('Coffee', 150)">Add</button>
+  </div>
+
+  <div class="menu-item beverages">
+        <img src="https://th.bing.com/th/id/OIP.WZgSm57WFbSJslTk8K0-vQHaFj?w=243&h=182&c=7&r=0&o=7&cb=defcachec2&dpr=1.3&pid=1.7&rm=3" height="250" alt="Masala Chai">
+    <h3>Masala Chai</h3>
+    <p>Traditional Indian tea brewed with milk ,sugar, and aromatic spices like cardamom and ginger .</p>
+    <span>Rs.19</span>
+    <button onclick="addToCart('Masala Chai', 19)">Add</button>
+  </div>
+
+   <div class="menu-item beverages">
+        <img src="https://th.bing.com/th/id/OIP.W1PT2j5lAedTO5_FQujPkwHaLG?w=204&h=306&c=7&r=0&o=7&cb=defcachec2&dpr=1.3&pid=1.7&rm=3" height="250" alt="Chocolate Milkshake">
+    <h3>Chocolate Milkshake</h3>
+    <p>Smooth Milkshake blended with chocolate syrup and ice cream, loved for its rich and sweet taste.</p>
+    <span>Rs.199</span>
+    <button onclick="addToCart('Chocolate Milkshake', 199)">Add</button>
+  </div>
+
+
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>📍 lanka Food Street, VARANASI, UP</p>
+  <p>📞 +91 8521367841</p>
+  <p>© 2026 FLAVOUR__HUNTERS</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

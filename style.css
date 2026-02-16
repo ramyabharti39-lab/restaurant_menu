@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: rgba(244, 109, 13, 0.851);
+}
+
+/* Header */
+header {
+  background: #f00a0a85;
+  color: rgba(111, 3, 25, 0.992);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  align-items: center;
+}
+
+nav a {
+  color: rgb(234, 188, 5);
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Filter Bar */
+.filter-bar {
+  text-align: center;
+  margin: 20px;
+}
+
+.filter-bar button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  background: #e9c02b94;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.filter-bar button.active,
+.filter-bar button:hover {
+  background: #b05f03;
+  color: rgb(89, 3, 3);
+}
+
+/* Menu Grid */
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px 40px;
+}
+
+.menu-item {
+  background: rgba(223, 223, 220, 0.975);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.menu-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.menu-item span {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.menu-item button {
+  background: #e81919;
+  border: none;
+  padding: 8px 12px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #3e0101;
+  color: rgb(249, 172, 172);
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
